@@ -12,7 +12,7 @@ from streamlit_authenticator.utilities.exceptions import (CredentialsError,
 
 st.markdown("Register")
 
-with open('/Users/william/Documents/NoFoodWaste/user.yaml') as file:
+with open('user.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
 
 authenticator = Authenticate(
@@ -31,7 +31,7 @@ if email_of_registered_user:
 
      
 
-with open('/Users/william/Documents/NoFoodWaste/user.yaml', 'w', encoding='utf-8') as file:
+with open('user.yaml', 'w', encoding='utf-8') as file:
     yaml.dump(config, file, default_flow_style=False)
 
 if st.button("Login"):
