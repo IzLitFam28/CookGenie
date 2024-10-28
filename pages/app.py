@@ -6,7 +6,7 @@ from streamlit_navigation_bar import st_navbar
 import utils as pg
 
 st.set_page_config(
-        page_title="NoFoodWaste",
+        page_title="CookGenie",
         page_icon="🍲",
         layout="wide",
         initial_sidebar_state="expanded"
