@@ -8,4 +8,5 @@ PACKAGE = """
             <div>
         <div>
     </div>
+    <input type="button" value="Subscribe">
 """.strip()
